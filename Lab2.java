@@ -1,16 +1,13 @@
-// Programmers:  [your names here]
+// Programmers: Chris & Cyrus
 // Course:  CS 212
-// Due Date:
-// Lab Assignment:
-// Problem Statement:
-// Data In:
-// Data Out:
-// Credits: [Is your code based on an example in the book, in class, or something else?
-//            Reminder: you should never take code from the Internet or another person
+// Date: Jan 1st
+// Lab Assignment: 1
+// Problem Statement: Generate lottery tickets for players.
+// Data In: Player's name
+// Data Out: Loterry ticket, prize amount
 
 import java.util.*;
 import java.text.*;
-
 
 class Lab2 {
     public static void main(String[] args) {
@@ -25,15 +22,15 @@ class Lab2 {
         System.out.print("What's your name? ");
         String customerName = input.nextLine();
 
-        System.out.print("Here is the ticket:");
+        System.out.println("Here is the ticket: ");
         for (int i = 1; i <= 10; i++){
             for (int j = 1; j <= 6; j++){
                 String rand = df.format((int) (Math.random() * 100));
-                System.out.print(rand);
+                System.out.print(rand + " ");
             }
             System.out.println();
         }
         
-        System.out.println("-----------------\n Good luck Steve!\n Estimated Jackpot:\n $" + prize + "\n -----------------");
+        System.out.println("-----------------\n Good luck " + customerName + "!\n Estimated Jackpot:\n $" + prize + "\n -----------------");
     }
 }
