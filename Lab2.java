@@ -14,8 +14,10 @@ import java.text.*;
 
 class Lab2 {
     public static void main(String[] args) {
-        long prize = 225938745L;
+        DecimalFormat df = new DecimalFormat("00");
         Scanner input = new Scanner(System.in);
+
+        long prize = 225938745L;
 
         System.out.println("CS 212 - Lab 2");
         System.out.println("This program generates 10 lottery tickets.");
@@ -23,7 +25,7 @@ class Lab2 {
         System.out.print("What's your name? ");
         String customerName = input.nextLine();
 
-        DecimalFormat df = new DecimalFormat("00");
+        System.out.print("Here is the ticket:");
         for (int i = 1: i <= 10; i++){
             for (int j = 1; i <= 6; j++){
                 String rand = df.format((int) (Math.random() * 100));
@@ -31,5 +33,7 @@ class Lab2 {
             }
             System.out.println();
         }
+        
+        System.out.println("-----------------\n Good luck Steve!\n Estimated Jackpot:\n $" + prize + "\n -----------------");
     }
 }
