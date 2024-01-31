@@ -11,6 +11,7 @@
 import java.util.*;
 import java.text.*;
 
+
 class Lab2 {
     public static void main(String[] args) {
         long prize = 225938745L;
