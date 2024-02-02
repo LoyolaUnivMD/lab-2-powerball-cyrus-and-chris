@@ -22,7 +22,10 @@ class Lab2 {
         double playAmount, winAmount;
         String customerName;
 
-        System.out.println("-----------------\nCS212 - Lab 2 \nThis program generates 10 lottery tickets.\n-----------------");
+        System.out.println("-----------------" +
+                           "\nCS212 - Lab 2" +
+                           "\nThis program generates 10 lottery tickets." +
+                           "\n-----------------");
         
         System.out.print("What's your name? ");
         customerName = input.nextLine();
@@ -31,7 +34,8 @@ class Lab2 {
         winAmount = playAmount = input.nextDouble();
 
         // Generating tickets and updating the winning amount on hits.
-        System.out.println("Here are the tickets: \n-----------------");
+        System.out.println("Here are the tickets: " + 
+                           "\n-----------------");
         int hits = 0;
         for (int i = 1; i <= 10; i++){
             for (int j = 1; j <= 6; j++){
