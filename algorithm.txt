@@ -3,13 +3,13 @@ Function Main():
     2. Display "This program generates 10 lottery tickets."
     3. Set prize to 225,938,745
     4. Input customerName, "What's your name?"
-    5. For 10 iterations:
-        i. Display "Here is the ticket:"
-        ii. For six iterations:
+    5. Display "Here is the ticket:"
+    6. For 10 iterations:
+        i. For 6 iterations:
             a. Set rand to a random number between 0 and 100
             b. Display "{rand} " (formatted as a two-character string)
-        iii. Display "\n"
-    6. Display "-----------------"
+        ii. Display "\n"
+    7. Display "-----------------"
                "Good luck {customerName}!"
                "Estimated Jackpot:"
                "${prize}"
